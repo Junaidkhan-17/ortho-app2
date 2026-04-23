@@ -1,0 +1,160 @@
+/* ════════════════════════════════
+   QUALIFICATIONS SECTION
+════════════════════════════════ */
+.qual-section {
+  padding: 80px 80px 100px 80px;
+  background: #fff;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+/* ── TITLE ── */
+.qual-title {
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 800;
+  color: #111;
+  line-height: 1;
+  margin-bottom: 60px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+/* Outlined (stroke) text for "Quali" */
+.qual-title__outline {
+  -webkit-text-stroke: 2px #111;
+  color: transparent;
+}
+
+/* ── BODY LAYOUT ── */
+.qual-body {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ── LEFT — LIST ── */
+.qual-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.qual-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* Number badge */
+.qual-item__badge {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #0ab5c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0ab5c8;
+  background: #f0fcfd;
+}
+
+.qual-item__degree {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.qual-item__institute {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4;
+}
+
+/* ── RIGHT — IMAGES ── */
+.qual-images {
+  position: relative;
+  height: 340px;
+}
+
+/* Main portrait — bottom-left */
+.qual-img--main {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+/* Award photo — top-right, offset */
+.qual-img--overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+/* Medal badge */
+.qual-medal {
+  position: absolute;
+  bottom: 80px;
+  left: 165px;   /* overlaps between the two images */
+  z-index: 3;
+  width: 52px;
+  height: 52px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .qual-section {
+    padding: 60px 32px 80px;
+  }
+
+  .qual-body {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .qual-images {
+    height: 280px;
+  }
+
+  .qual-img--main {
+    width: 160px;
+    height: 210px;
+  }
+
+  .qual-img--overlay {
+    width: 190px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .qual-title {
+    font-size: 36px;
+  }
+}
