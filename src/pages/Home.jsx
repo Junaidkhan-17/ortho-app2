@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import DoctorHero from "../components/DoctorHero";
+import HospitalHero from "../components/changes/Hospital";
 import Activities from "../components/Activities";
 import Qualifications from "../components/Qualification";
 import Academic from "../components/Academic";
@@ -11,6 +11,7 @@ import surgeryVid1 from "../assets/surgeryvideo.mp4";
 import surgeryVid2 from "../assets/patient.mp4";
 import bigImg from "../assets/bigImg.jpeg";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -26,16 +27,11 @@ export default function Home() {
   const innerImgRef = useRef(null);
 
   useEffect(() => {
-    // Small timeout ensures DOM is painted before ScrollTrigger measures
     const timer = setTimeout(() => {
       const ctx = gsap.context(() => {
-        // ── Clip-path reveal: slides up from bottom as hero scrolls out ──
         gsap.fromTo(
           revealBoxRef.current,
-          {
-            clipPath: "inset(100% 0 0 0)",
-            opacity: 0,
-          },
+          { clipPath: "inset(100% 0 0 0)", opacity: 0 },
           {
             clipPath: "inset(0% 0 0 0)",
             opacity: 1,
@@ -44,12 +40,11 @@ export default function Home() {
               trigger: heroRef.current,
               start: "top top",
               end: "bottom top",
-              scrub: true, // frame-perfect lock to scroll
+              scrub: true,
             },
           }
         );
 
-        // ── Subtle Ken-Burns scale on the image itself ──
         gsap.fromTo(
           innerImgRef.current,
           { scale: 1.12 },
@@ -65,10 +60,8 @@ export default function Home() {
           }
         );
       });
-
       return () => ctx.revert();
     }, 100);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -76,7 +69,7 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <div ref={heroRef}>
-        <DoctorHero />
+        <HospitalHero />
       </div>
 
       {/* ── SCROLL-REVEAL FIXED IMAGE (desktop only) ── */}
@@ -92,9 +85,9 @@ export default function Home() {
           overflow: "hidden",
           zIndex: 1000,
           pointerEvents: "none",
-          // initial hidden state set by GSAP — no CSS clip needed here
         }}
       >
+        {/* Image with Ken-Burns */}
         <Box
           ref={innerImgRef}
           component="img"
@@ -108,6 +101,53 @@ export default function Home() {
             transformOrigin: "center center",
           }}
         />
+
+        {/* ── TEXT OVERLAY ── */}
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: 36,
+            right: 32,
+            textAlign: "right",
+          }}
+        >
+          {/* Teal accent line */}
+          <Box
+            sx={{
+              width: 56,
+              height: 3,
+              background: "#1ccadd",
+              ml: "auto",
+              mb: 1,
+            }}
+          />
+          <Typography
+            sx={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "1rem",
+              fontWeight: 800,
+              color: "rgba(255,255,255,0.7)",
+              letterSpacing: "0.04em",
+              textTransform: "uppercase",
+              lineHeight: 1.4,
+            }}
+          >
+            Consultant in
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "1rem",
+              fontWeight: 700,
+              color: "#fff",
+              letterSpacing: "0.01em",
+              lineHeight: 1.4,
+            }}
+          >
+            Arthroscopic Surgery
+            <br />& Sports Medicine
+          </Typography>
+        </Box>
       </Box>
 
       {/* ── MAIN CONTENT ── */}

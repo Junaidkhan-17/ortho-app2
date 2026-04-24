@@ -125,12 +125,12 @@ export default function Qualifications() {
         {/* RIGHT — images (hidden on mobile, stacked on desktop) */}
         {!isMobile ? (
           <Box sx={{ width: 280, flexShrink: 0, display: "flex", flexDirection: "column", gap: 2 }}>
-            <Box sx={{ borderRadius: "12px", overflow: "hidden" }}>
+            {/* <Box sx={{ borderRadius: "12px", overflow: "hidden" }}>
               <img src={doctorImg} alt="Doctor" style={{ width: "100%", objectFit: "cover" }} />
-            </Box>
-            <Box sx={{ borderRadius: "12px", overflow: "hidden" }}>
+            </Box> */}
+            {/* <Box sx={{ borderRadius: "12px", overflow: "hidden" }}>
               <img src={qualImg} alt="Qualification" style={{ width: "100%", objectFit: "cover" }} />
-            </Box>
+            </Box> */}
           </Box>
         ) : (
           // Mobile — two overlapping images like reference
@@ -164,27 +164,7 @@ export default function Qualifications() {
               <img src={qualImg} alt="Qualification" style={{ width: "100%", objectFit: "cover" }} />
             </Box>
 
-            {/* Medal badge */}
-            <Box
-              sx={{
-                position: "absolute",
-                bottom: 10,
-                left: "40%",
-                transform: "translateX(-50%)",
-                zIndex: 3,
-                background: "#333",
-                borderRadius: "50%",
-                width: 48,
-                height: 48,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "1.4rem",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
-              }}
-            >
-              🏅
-            </Box>
+            
           </Box>
         )}
       </Box>
