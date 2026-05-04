@@ -8,7 +8,7 @@ import img1 from "../assets/bigImg.jpeg";
 import img2 from "../assets/face.jpeg";
 import img3 from "../assets/OT.png";
 import img4 from "../assets/OT Group.png";
-import img5 from "../assets/mapMah.jpg";
+import img5 from "../assets/OT.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

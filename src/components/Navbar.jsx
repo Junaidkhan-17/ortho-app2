@@ -20,8 +20,8 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-const PHONE_NUMBER = "919800000000"; // E.164 format without '+' for WhatsApp
-const EMAIL = "doctor@email.com";
+const PHONE_NUMBER = "919764566676"; // E.164 format without '+' for WhatsApp
+const EMAIL = "kaustubhkaleorthosurgeon@gmail.com";
 
 const patientLinks = [
   "Arthroscopy",
@@ -108,7 +108,7 @@ export default function Navbar() {
       onMouseLeave={(e) => (e.currentTarget.style.color = "#555")}
     >
       <FaWhatsapp style={{ color: "#25D366", marginRight: 6, fontSize: "1rem" }} />
-      +91 98XXXXXXXX
+      +91 9764566676
     </a>
 
     {/* Email */}
@@ -119,7 +119,7 @@ export default function Navbar() {
       onMouseLeave={(e) => (e.currentTarget.style.color = "#555")}
     >
       <FiMail style={{ color: "#25D366", marginRight: 6 }} />
-      {EMAIL}
+      Email
     </a>
 
   </div>
