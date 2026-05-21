@@ -163,33 +163,78 @@ export default function HospitalHero() {
                 sx={{
                   fontFamily: "'Playfair Display', serif",
                   fontWeight: 800,
-                  fontSize: { xs: "1.8rem", sm: "2.2rem", md: "2.8rem" },
-                  lineHeight: 1.15,
+                  fontSize: { xs: "1.8rem", sm: "2.2rem", md: "2.4rem" },
+                  lineHeight: 1,
                   color: "#0d1b2a",
                   mb: 2.5,
                   animation: `${fadeUp} 0.7s ease both`,
                   animationDelay: "0.2s",
                 }}
               >
-                Healthcare for<br />Family's Health
+                Healthcare for Family's Health.
               </Typography>
 
               {/* Body */}
               <Typography
                 sx={{
-                  fontSize: { xs: "14px", md: "15px" },
+                  fontSize: { xs: "14px", md: "16px" },
                   color: "#6b7280",
-                  lineHeight: 1.8,
-                  maxWidth: 420,
+                  lineHeight: 1.4,
+                  maxWidth: 620,
                   mb: 4,
                   fontFamily: "'DM Sans', sans-serif",
                   animation: `${fadeUp} 0.7s ease both`,
                   animationDelay: "0.35s",
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non mauris
-                nulla tincidunt fermentum. Sagittis pellentesque.
+                Dr. KAUSTUBH KALE is a highly SKILLED and ACCOMPLISHED Orthopaedic Surgeon with over 10 years of experience in the field of Orthopaedics, specializing in ARTHROSCOPY JOINT REPLACEMENT and COMPLEX TRAUMA Surgery. 
               </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "14px", md: "14px" },
+                  color: "#6b7280",
+                  lineHeight: 1.6,
+                  maxWidth: 620,
+                  mb: 4,
+                  fontFamily: "'DM Sans', sans-serif",
+                  animation: `${fadeUp} 0.7s ease both`,
+                  animationDelay: "0.35s",
+                  marginTop: "-16px",
+                }}
+              >
+              Having completed his medical education and surgical training from reputed GOVERNMENT  Medical Colleges through MERIT- BASED selection, he brings with him a strong academic foundation, extensive clinical expertise, and a commitment to ETHICAL medical practice.
+              </Typography>
+                            <Typography
+                sx={{
+                  fontSize: { xs: "14px", md: "14px" },
+                  color: "#6b7280",
+                  lineHeight: 1.6,
+                  maxWidth: 620,
+                  mb: 4,
+                  fontFamily: "'DM Sans', sans-serif",
+                  animation: `${fadeUp} 0.7s ease both`,
+                  animationDelay: "0.35s",
+                  marginTop: "-16px",
+                }}
+              >
+              Known for his PATIENT- CENTRIC approach and meticulous surgical PRECISION, Dr. Kaustubh Kale believes in delivering evidence-based treatment tailored to each individual’s needs. His focus extends beyond surgery toward ensuring COMPREHENSIVE CARE, FASTER RECOVERY, improved mobility, and the BEST possible functional OUTCOMES for every patient.
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "14px", md: "14px" },
+                  color: "#6b7280",
+                  lineHeight: 1.6,
+                  maxWidth: 620,
+                  mb: 4,
+                  fontFamily: "'DM Sans', sans-serif",
+                  animation: `${fadeUp} 0.7s ease both`,
+                  animationDelay: "0.35s",
+                  marginTop: "-16px",
+                }}
+              >
+             With dedication to clinical excellence, ADVANCED surgical TECHNIQUES and compassionate care, he continues to strive toward restoring quality of life and helping patients return confidently to their daily activities.             
+              </Typography>
+              
 
               {/* CTA */}
               <Button

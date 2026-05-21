@@ -8,7 +8,7 @@ const activities = [
   "Active member of reputed orthopaedic associations",
 ];
 
-const logos = ["IMA", "IOA", "WBOA", "ISAKOS"];
+const logos = ["IMA", "IOA", "IAS", "ISAKOS"];
 
 export default function Academic() {
   return (

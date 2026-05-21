@@ -18,7 +18,7 @@ const qualifications = [
   { degree: "DNB Orthopaedics", institute: "Diplomate of National Board in Orthopedics (New Delhi)" },
   { degree: "MNAMS", institute: "Member of National Academy of Medical Sciences" },
   { degree: "Fellowship in Arthroscopy", institute: "Advanced Orthopaedic Centre, Pune" },
-  { degree: "FRCS", institute: "Edinburgh" },
+  { degree: "Robotic Joint Replacement", institute: "Edinburgh" },
 ];
 
 export default function Qualifications() {

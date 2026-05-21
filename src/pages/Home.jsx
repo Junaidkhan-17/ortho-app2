@@ -126,7 +126,7 @@ export default function Home() {
               fontFamily: "'DM Sans', sans-serif",
               fontSize: "1rem",
               fontWeight: 800,
-              color: "rgba(255,255,255,0.7)",
+              color: "#ffffffff",
               letterSpacing: "0.04em",
               textTransform: "uppercase",
               lineHeight: 1.4,
@@ -137,15 +137,17 @@ export default function Home() {
           <Typography
             sx={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: "1rem",
+              fontSize: "1.2rem",
               fontWeight: 700,
-              color: "#fff",
+              color: "#ffffffff",
               letterSpacing: "0.01em",
               lineHeight: 1.4,
             }}
           >
             Arthroscopic Surgery
-            <br />& Sports Medicine
+            <br />Dr. Kale’s Vijaya Multi Speciality Hospital.
+            <br/>Get well , wockhardt , viveka, swastham , padole.
+            <br/>Affiliated.
           </Typography>
         </Box>
       </Box>

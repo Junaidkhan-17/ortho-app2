@@ -11,7 +11,7 @@ const activities = [
 ];
 
 const stats = [
-  { label: "Years of Experience", end: 8, suffix: "+" },
+  { label: "Years of Experience", end: 10, suffix: "+" },
   { label: "Successful Surgeries", end: 1000, suffix: "+" },
 ];
 
